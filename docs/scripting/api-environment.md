@@ -8,6 +8,7 @@ mentions:
     - ThomasOrs
     - MuhammadRestu999
     - QuazChick
+    - RememberM9
 ---
 
 Minecraft: Bedrock Edition uses its own version of JavaScript, which is based on QuickJS.
@@ -49,14 +50,13 @@ To enable these methods that evaluate code, you must add it in the manifest. Thi
     -   `Object` - Standard function constructor for objects
     -   `Function` - Standard function constructor for functions. Note that to use this the `script_eval` capability must be added to the pack manifest.
     -   `Error` - (`EvalError`, `RangeError`, `ReferenceError`, `SyntaxError`, `TypeError`, `URIError`, `InternalError`, `AggregateError`) - Classes for error construction
-    -   `Array` - (`Int8Array`, `UInt8Array`, `Int16Array`, `UInt16Array`, `Int32Array`, `UInt32Array`, `Float32Array`, `Float64Array`, `SharedArrayBuffer`, `ArrayBuffer`, `UInt8ClampedArray`) Standard function constructor for Array objects
+    -   `Array` - (`Int8Array`, `Uint8Array`, `Int16Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array`, `Float64Array`, `SharedArrayBuffer`, `ArrayBuffer`, `Uint8ClampedArray`) Standard function constructor for Array objects
     -   `parseInt`, `parseFloat` - Standard methods for parsing string to number
     -   `isNaN`, `isFinite` - Standard methods for checking number types
     -   `decodeURI`, `encodeURI` - Standard methods for decoding and encoding URI paths
     -   `decodeURIComponent`, `encodeURIComponent` - Standard methods for decoding and encoding URI components
     -   `escape`, `unescape` - Non-standard methods! Please use decodeURI/encodeURI if possible
     -   `NaN`, `Infinity`, `undefined` - Standard variables for in-code usage
-    -   `__date_clock` - Built-in QuickJS method for getting current time in microseconds
     -   `Number`, `Boolean`, `String`, `Symbol` - Standard function constructor for JS primitives
     -   `Math` - Standard object having primary math functions, such as trig ratios & powers
     -   `Reflect` - Standard object having built-in methods
@@ -74,6 +74,7 @@ To enable these methods that evaluate code, you must add it in the manifest. Thi
 
 -   **_What is not supported_**
 
+    -   `__date_clock` - Built-in QuickJS method for getting current time in microseconds
     -   `setTimeout` - Standard function for timing code runs
     -   `setInterval` - Standard function for timing code runs in intervals
     -   `clearTimeout` - Standard function for canceling setTimeout runs
